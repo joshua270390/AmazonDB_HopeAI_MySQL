@@ -51,7 +51,7 @@ GROUP BY OD.product_id;
 
 -- 6.	Update the price of all products in the Books category, increasing it by 10%. Query.
 
-SELECT DISTINCT name, category, ceil(price + (price * 10 / 100)) as "New Price"
+SELECT name, category, ceil(price + (price * 10 / 100)) as "New Price"
 FROM products
 WHERE category = "Books";
 
